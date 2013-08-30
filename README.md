@@ -230,7 +230,127 @@ of multiple classes.
 
 ### JS hooks
 
-**Never use a CSS _styling_ class as a JavaScript hook.** Attaching JS behaviour
+**Never use a CSS _styling_ class as a JavaScript hook.** Attaching JS behavior
 to a styling class means that we can never have one without the other.
+
+If we need to bind to some markup use a JS specific CSS class. This is simply a
+class with `.js-`, e.g. `.js-toggle`, `.js-drag-and-drop`. This means
+that we can attach both JS and CSS to classes in our markup but there will never
+be any troublesome overlap.
+
+    <span class="is-sortable  js-is-sortable">
+    </span>
+
+## Comments
+
+For the sake of uniformity, I propose a docBlock-eque commenting style which will be 
+limited to 80 characters in length:
+
+	/**
+	    * This is a docBlock style comment
+	    *
+	    * This is a longer description of the comment, describing the code in more
+	    * detail. We limit these lines to a maximum of 80 characters in length.
+	    *
+	    * We can have markup in the comments, and should be encouraged to do so:
+	    *
+	      <div class="Bacon">
+	          <p>Ipsum</p>
+	      </div>
+	    *
+	    */
+
+
+---
+
+## Writing CSS
+
+The previous section dealt with how we structure and form our CSS; they were
+very quantifiable rules. The next section is a bit more theoretical and deals
+with our attitude and approach.
+
+## Building new components
+
+When building a new component write markup **before** CSS. This means you can
+visually see which CSS properties are naturally inherited and thus avoid
+reapplying redundant styles.
+
+By writing markup first we will can focus on data, content and semantics and then
+apply only the relevant classes and CSS _afterwards_.
+
+## OOCSS
+
+I work in an OOCSS manner; I split components into structure (objects) and
+skin (extensions). As an **analogy** (note, not example) take the following:
+
+    .room{}
+
+    .room--kitchen{}
+    .room--bedroom{}
+    .room--bathroom{}
+
+We have several types of room in a house, but they all share similar traits;
+they all have floors, ceilings, walls and doors. We can share this information
+in an abstracted `.room{}` class. However we have specific types of room that
+are different from the others; a kitchen might have a tiled floor and a bedroom
+might have carpets, a bathroom might not have a window but a bedroom most likely
+will, each room likely has different colored walls. OOCSS teaches us to
+abstract the shared styles out into a base object and then _extend_ this
+information with more specific classes to add the unique treatment(s).
+
+So, instead of building dozens of unique components, try and spot repeated
+design patterns across them all and abstract them out into reusable classes;
+build these skeletons as base ‘objects’ and then peg classes onto these to
+extend their styling for more unique circumstances.
+
+If you have to build a new component split it into structure and skin; build the
+structure of the component using very generic classes so that we can reuse that
+construct and then use more specific classes to skin it up and add design
+treatments.
+
+## Layout
+
+All components you build should be left totally free of widths; they should
+always remain fluid and their widths should be governed by a parent/grid system.
+
+Heights should **never** be be applied to elements. Heights should only be
+applied to things which had dimensions _before_ they entered the site (i.e.
+images and sprites). Never ever set heights on `p`s, `ul`s, `div`s, anything.
+You can often achieve the desired effect with `line-height` which is far more
+flexible.
+
+Grid systems should be thought of as shelves. They contain content but are not
+content in themselves. You put up your shelves then fill them with your stuff.
+By setting up our grids separately to our components you can move components
+around a lot more easily than if they had dimensions applied to them; this makes
+our front-ends a lot more adaptable and quick to work with.
+
+You should never apply any styles to a grid item, they are for layout purposes
+only. Apply styling to content _inside_ a grid item. Never, under _any_
+circumstances, apply box-model properties to a grid item.
+
+## Sizing UIs
+
+I use a combination of methods for sizing UIs. Percentages, pixels, ems, rems
+and nothing at all.
+
+Grid systems should, ideally, be set in percentages. Because I use grid systems
+to govern widths of columns and pages, I can leave components totally free of
+any dimensions (as discussed above).
+
+Font sizes can be set in rems with a pixel fallback. This gives the accessibility
+benefits of ems with the confidence of pixels. Here is a handy Sass mixin to
+work out a rem and pixel fallback for you (assuming you set your base font
+size in a variable somewhere):
+
+    @mixin font-size($font-size){
+        font-size:$font-size +px;
+        font-size:$font-size / $base-font-size +rem;
+    }
+
+I only use pixels for items whose dimensions were defined before the came into
+the site. This includes things like images and sprites whose dimensions are
+inherently set absolutely in pixels.
+
 
 ## More to Come...
