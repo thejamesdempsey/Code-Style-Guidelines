@@ -103,8 +103,7 @@ files with a section title and there is no need for any carriage returns.
 
 ## Source order
 
-Try and write stylesheets in specificity order. This ensures that you take full
-advantage of inheritance and CSS’ first <i>C</i>; the cascade.
+Try and write stylesheets in specificity order. 
 
 A well ordered stylesheet will be ordered something like this:
 
@@ -180,10 +179,29 @@ One exception to the multi-line rule might be in cases of the following:
 
 ## Naming conventions
 
-For the most part I simply use hyphen delimited classes (e.g. `.foo-bar`, not
-`.foo_bar` or `.fooBar`), however in certain circumstances I use BEM (Block,
+For the most part I recommend simply use hyphen delimited classes (e.g. `.widget-heading`, not
+`.widget_heading` or `.widgetHeading`), however in certain circumstances we should use BEM (Block,
 Element, Modifier) notation.
 
 <abbr title="Block, Element, Modifier">BEM</abbr> is a methodology for naming
 and classifying CSS selectors in a way to make them a lot more strict,
 transparent and informative.
+
+The naming convention follows this pattern:
+
+    .block{}
+    .block__element{}
+    .block--modifier{}
+
+* `.block` represents the higher level of an abstraction or component.
+* `.block__element` represents a descendent of `.block` that helps form `.block`
+  as a whole.
+* `.block--modifier` represents a different state or version of `.block`.
+
+An **analogy** of how BEM classes work might be:
+
+    .person{}
+    .person--woman{}
+        .person__hand{}
+        .person__hand--left{}
+        .person__hand--right{}
