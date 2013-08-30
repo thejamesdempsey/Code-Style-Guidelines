@@ -20,6 +20,11 @@ Now that we will be working on large, long running projects with multiple develo
 * [Naming Conventions](#naming-conventions)
 	* [JS hooks](#js-hooks)
 * [Comments](#comments)
+* [Writing CSS](#writing-css)
+* [Building new components](#building-new-components)
+* [OOCSS](#oocss)
+* [Layout](#layout)
+* [Sizing UIs](#sizing-uis)
 
 ---
 
