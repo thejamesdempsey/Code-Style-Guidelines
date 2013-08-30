@@ -205,3 +205,32 @@ An **analogy** of how BEM classes work might be:
         .person__hand{}
         .person__hand--left{}
         .person__hand--right{}
+
+BEM looks a little uglier, and is a lot more verbose, but it grants us a lot of
+power in that we can glean the functions and relationships of elements from
+their classes alone. Also, BEM syntax will typically compress (gzip) very well
+as compression favors/works well with repetition.
+
+Regardless of whether we need to use BEM or not, always ensure classes are
+sensibly named; keep them as short as possible but as long as necessary. Ensure
+any objects or abstractions are very vaguely named (e.g. `.ui-list`, `.media`)
+to allow for greater reuse. Extensions of objects should be much more explicitly
+named (e.g. `.user-avatar-link`). Don’t worry about the amount or length of
+classes; gzip will compress well written code _incredibly_ well.
+
+### Classes in HTML
+
+In order to make things easier to read, separate classes in HTML with two
+(2) spaces, thus:
+
+    <div class="block--modifier  block__element">
+
+This increased whitespace should hopefully allow for easier spotting and reading
+of multiple classes.
+
+### JS hooks
+
+**Never use a CSS _styling_ class as a JavaScript hook.** Attaching JS behaviour
+to a styling class means that we can never have one without the other.
+
+## More to Come...
