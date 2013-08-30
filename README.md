@@ -8,7 +8,7 @@ Now that we will be working on large, long running projects with multiple develo
 * Keep code transparent and readable
 * Keep stylesheets scalable
 
-## Contents
+## Table of Contents
 
 * [CSS document anatomy](#css-document-anatomy)
 	* [General](#general)
@@ -25,6 +25,8 @@ Now that we will be working on large, long running projects with multiple develo
 * [OOCSS](#oocss)
 * [Layout](#layout)
 * [Sizing UIs](#sizing-uis)
+	* [Font sizing](#font-sizing)
+* [Shorthand](#shorthand)
 
 ---
 
@@ -41,7 +43,7 @@ nothing we can do about those.
 
 I prefer single-tab indents set to four space size and write multi-line CSS.
 
-### One file vs. many files
+### Single file vs. many files
 
 Some people prefer to work with single, large files. This is fine, and by
 sticking to the proposed guidelines you’ll encounter no problems. Since moving
@@ -355,9 +357,33 @@ size in a variable somewhere):
         font-size:$font-size / $base-font-size +rem;
     }
 
-I only use pixels for items whose dimensions were defined before the came into
+We should only use pixels for items whose dimensions were defined before the came into
 the site. This includes things like images and sprites whose dimensions are
 inherently set absolutely in pixels.
 
+### Font sizing
 
-## More to Come...
+We should define a series of classes akin to a grid system for sizing fonts. These
+classes can be used to style type in a double stranded heading hierarchy.
+
+## Shorthand
+
+**_Shorthand CSS needs to be used with caution._**
+
+It might be tempting to use declarations like `background:red;` but in doing so
+what you are actually saying is ‘I want no image to scroll, aligned top-left,
+repeating X and Y, and a background colour of red’. Nine times out of ten this
+won’t cause any issues but that one time it does is annoying enough to warrant
+not using such shorthand. Instead use `background-color:red;`.
+
+Similarly, declarations like `margin:0;` are nice and short, but we must
+**be explicit**. If we actually only really want to affect the margin on
+the bottom of an element then it is more appropriate to use `margin-bottom:0;`.
+
+Be explicit in which properties you set and take care to not inadvertently unset
+others with shorthand. E.g. if you only want to remove the bottom margin on an
+element then there is no sense in setting all margins to zero with `margin:0;`.
+
+Shorthand is good, but easily misused.
+
+## More to Come
