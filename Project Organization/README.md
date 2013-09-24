@@ -1,12 +1,12 @@
-# General CSS Guidelines
+# General CSS Guidelines Proposal
 
 ---
 
 Now that we will be working on large, long running projects with multiple developers, it is essential that we all work in a unified way in order to:
 
-* Write maintainable code
+* Write maintainable stylesheets
 * Keep code transparent and readable
-* Keep  scalable
+* Keep stylesheets scalable
 
 ## Table of Contents
 
