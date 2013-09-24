@@ -5,12 +5,12 @@
 This section contains the proposed coding style for JavaScript and various JavaScript based frameworks including but not limited to:
 
 * Vanilla (plain 'ole JS)
-* JQuery
+* jQuery
 * Backbone
 * Angular
 * CoffeeScript
 * That random variation a blogger recommended
-* Etc
+* Etc.
 
 ## Table of Contents
 

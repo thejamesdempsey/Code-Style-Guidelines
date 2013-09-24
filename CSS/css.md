@@ -1,4 +1,4 @@
-# General CSS Guidelines Proposal
+# General CSS Guidelines
 
 ---
 
