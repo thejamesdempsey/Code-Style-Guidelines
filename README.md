@@ -15,6 +15,7 @@ developers, it is essential that we all work in a unified way in order to:
 * [Project Structure](https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Project%20Structure)
 * [Languages](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/)
   * [CSS](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/css.md)
+  * [HTML](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/html.md)
 	* [JavaScript](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/javascript.md)
 	
   
