@@ -11,8 +11,8 @@ and submit a pull request.
 
 ## Table of Contents
 
-* [CSS](#https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Languages/css.md)
-* [JavaScript](#https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Languages/javascript.md)
+* [CSS](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/css.md)
+* [JavaScript](https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Languages/javascript.md)
 
 
 ---
