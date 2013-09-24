@@ -2,12 +2,6 @@
 
 ---
 
-Now that we will be working on large, long running projects with multiple developers, it is essential that we all work in a unified way in order to:
-
-* Write maintainable stylesheets
-* Keep code transparent and readable
-* Keep stylesheets scalable
-
 ## Table of Contents
 
 * [CSS document anatomy](#css-document-anatomy)
@@ -50,7 +44,7 @@ Limit your stylesheets to a maximum 80 character width where possible.
 Exceptions may be gradient syntax and URLs in comments. There’s
 nothing we can do about those.
 
-I prefer single-tab indents set to four space size and write multi-line CSS.
+I prefer four space size indentation and I write multi-line CSS.
 
 ### Single file vs. many files
 

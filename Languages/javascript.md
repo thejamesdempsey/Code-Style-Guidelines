@@ -2,7 +2,8 @@
 
 ---
 
-This section contains the proposed coding style for JavaScript and various JavaScript based frameworks including but not limited to:
+This section contains the proposed coding style for JavaScript and various
+JavaScript based frameworks including but not limited to:
 
 * Vanilla (plain 'ole JS)
 * jQuery
@@ -15,13 +16,7 @@ This section contains the proposed coding style for JavaScript and various JavaS
 ## Table of Contents
 
 * [JavaScript document anatomy](#javascript-document-anatomy)
-	* [General](#general)
-	* [Single file vs many files](#single-file-vs-many-files)
-	* [Table of Contents](#table-of-contents)
-	* [Section Titles](#section-titles)
-* [Order and Organization](#order-and-organization)
-* [Ruleset Anatomy](#ruleset-anatomy)
-* [Naming Conventions](#naming-conventions)
+
 
 ---
 

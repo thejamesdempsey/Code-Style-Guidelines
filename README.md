@@ -2,7 +2,8 @@
 
 ---
 
-Now that we will be working on large, long running projects with multiple developers, it is essential that we all work in a unified way in order to:
+Now that we will be working on large, long running projects with multiple
+developers, it is essential that we all work in a unified way in order to:
 
 * Write maintainable code
 * Keep code transparent and readable
@@ -11,13 +12,10 @@ Now that we will be working on large, long running projects with multiple develo
 ## Table of Contents
 
 * [Purpose](#purpose)
-	* [General](#general)
-	* [Single file vs many files](#single-file-vs-many-files)
-	* [Table of Contents](#table-of-contents)
-	* [Section Titles](#section-titles)
-* [Languages](#languages)
-	* [CSS](#css)
-	* [JavaScript](#javascript)
+* [Project Structure](https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Project%20Structure)
+* [Languages](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/)
+  * [CSS](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/css.md)
+	* [JavaScript](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/javascript.md)
 	
   
 
@@ -26,6 +24,15 @@ Now that we will be working on large, long running projects with multiple develo
 
 ## Purpose
 
-No matter the document, we must always try and keep a common formatting. This
+No matter the project, we must always try and keep a common formatting. This
 means consistent commenting, consistent syntax and consistent naming.
 
+## Adding to These Guidelines
+
+If you find yourself coding frequently in a language not listed or one with 
+insufficient guidelines, please write up a proposal following industry standard
+best practices (include personal preferences only if the practices are 
+ambiguous or still being developed) and submit a pull request.
+
+Limit your markdown files to a maximum 80 character width where possible.
+Exceptions may be made for URLs. There’s nothing we can do about those.
