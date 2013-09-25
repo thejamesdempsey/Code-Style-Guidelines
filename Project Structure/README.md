@@ -11,20 +11,32 @@ in order to:
 
 ## Table of Contents
 
-* [General Project Organization](#general-project-organization)
-* [Folder Structure](#folder-structure)
-  * [General]()
-  * [Root Folder Files]()
-  * [Assets Folder]()
-    * [Fonts]()
-    * [Images]()
-    * [Scripts]()
-    * [Styles]()
-	* 
+* [General Project Organization]()
+* [Root Folder Files]()
+* [Assets Folder]()
+	* [Fonts]()
+	* [Images]()
+	* [Scripts]()
+	* [Styles]()
 
 
 ---
 
+
 ## General Project Organization
+Below is a structural overview of a project
+
+|-- Root
+	|-- Assets
+		|-- Fonts
+		|-- Images
+			|-- originals
+			|-- www-images
+		|-- Scripts
+		|-- Styles
+			|-- project-name folder
+				|-- project-name.scss
+			|-- inuit
+			|-- screen.scss
 
 
