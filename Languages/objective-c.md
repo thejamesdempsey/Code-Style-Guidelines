@@ -1,4 +1,4 @@
-ru Objective-C Style Guide
+# Cru Objective-C Style Guide
 
 This style guide outlines the coding conventions of the iOS team at Cru. It is based off of the [NYTimes style guide](https://github.com/NYTimes/objective-c-style-guide).
 
