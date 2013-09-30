@@ -12,11 +12,12 @@ developers, it is essential that we all work in a unified way in order to:
 ## Table of Contents
 
 * [Purpose](#purpose)
-* [Project Structure](https://github.com/thejamesdempsey/Code-Style-Guidelines/tree/master/Project%20Structure)
-* [Languages](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/)
-  * [CSS](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/css.md)
-  * [HTML](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/html.md)
-	* [JavaScript](https://github.com/thejamesdempsey/Code-Style-Guidelines/blob/master/Languages/javascript.md)
+* [Project Structure](Project%20Structure/)
+* [Languages](Languages/)
+  * [CSS](Languages/css.md)
+  * [HTML](Languages/html.md)
+	* [JavaScript](Languages/javascript.md)
+  * [Objective-C](Languages/objective-c.md)
 	
   
 
